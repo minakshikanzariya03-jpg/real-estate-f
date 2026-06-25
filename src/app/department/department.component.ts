@@ -20,6 +20,7 @@ export class DepartmentComponent implements OnInit {
     this.loadDepartments();
   }
 
+  
   loadDepartments() {
     this.departmentService.getDepartments().subscribe({
       next: (res: any) => {
